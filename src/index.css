@@ -1,13 +1,18 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Theme 1: Minimal */
+.theme1 {
+  @apply bg-white text-black font-sans;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Theme 2: Dark + Sidebar */
+.theme2 {
+  @apply bg-gray-900 text-white font-serif;
+}
+
+/* Theme 3: Colorful Cards */
+.theme3 {
+  @apply bg-gradient-to-tr from-yellow-100 to-pink-100 text-pink-700 font-pacifico;
 }
